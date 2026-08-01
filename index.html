@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>EAT · 看你心情今天想吃啥</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app" aria-label="EAT 心情选餐">
+    <section class="gallery" aria-label="食物推荐预览">
+      <h1 class="brand" aria-label="EAT">EAT</h1>
+
+      <div class="carousel-row top">
+        <div class="carousel-track">
+          <div class="carousel-group">
+            <div class="food-card"><img class="food-2" src="images/food-2.png" alt="黄色小鸡甜点"></div>
+            <div class="food-card"><img class="food-3" src="images/food-3.png" alt="蓝莓"></div>
+            <div class="food-card"><img class="food-4" src="images/food-4.png" alt="桃子"></div>
+          </div>
+          <div class="carousel-group" aria-hidden="true">
+            <div class="food-card"><img class="food-2" src="images/food-2.png" alt=""></div>
+            <div class="food-card"><img class="food-3" src="images/food-3.png" alt=""></div>
+            <div class="food-card"><img class="food-4" src="images/food-4.png" alt=""></div>
+          </div>
+          <div class="carousel-group" aria-hidden="true">
+            <div class="food-card"><img class="food-2" src="images/food-2.png" alt=""></div>
+            <div class="food-card"><img class="food-3" src="images/food-3.png" alt=""></div>
+            <div class="food-card"><img class="food-4" src="images/food-4.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-row bottom">
+        <div class="carousel-track">
+          <div class="carousel-group">
+            <div class="food-card"><img class="food-0" src="images/food-0.png" alt="奶油纸杯蛋糕"></div>
+            <div class="food-card"><img class="food-1" src="images/food-1.png" alt="菠萝派"></div>
+            <div class="food-card"><img class="food-5" src="images/food-5.png" alt="草莓"></div>
+          </div>
+          <div class="carousel-group" aria-hidden="true">
+            <div class="food-card"><img class="food-0" src="images/food-0.png" alt=""></div>
+            <div class="food-card"><img class="food-1" src="images/food-1.png" alt=""></div>
+            <div class="food-card"><img class="food-5" src="images/food-5.png" alt=""></div>
+          </div>
+          <div class="carousel-group" aria-hidden="true">
+            <div class="food-card"><img class="food-0" src="images/food-0.png" alt=""></div>
+            <div class="food-card"><img class="food-1" src="images/food-1.png" alt=""></div>
+            <div class="food-card"><img class="food-5" src="images/food-5.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mood-panel" aria-labelledby="prompt-title" data-selected="center">
+      <h2 class="headline" id="prompt-title">
+        <span>看你心情</span>
+        <span>今天想吃啥</span>
+      </h2>
+
+      <svg class="scribble" viewBox="0 0 90 28" aria-hidden="true">
+        <path d="M3 15 C18 10, 34 6, 45 8 C53 9, 49 15, 41 22 C53 19, 70 17, 87 7" fill="none" stroke="#37f522" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+
+      <div class="mood-options" role="group" aria-label="选择当前心情" data-selected="center">
+        <button class="mood casual" type="button" aria-pressed="false" data-mood="随便吃点" data-mood-key="casual">
+          <img class="casual-selected" src="svg/group-10.svg" alt="" aria-hidden="true">
+          <span class="face" aria-hidden="true"><i></i><i></i></span>
+          <span class="mood-label">随便<br>吃点</span>
+        </button>
+
+        <button class="mood center" type="button" aria-pressed="true" data-mood="正在纠结" data-mood-key="center">
+          <svg class="bag" viewBox="134 576 108 116" aria-hidden="true">
+            <defs>
+              <linearGradient id="bag-gradient" x1="188" y1="579" x2="188" y2="689" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ffe116"/>
+                <stop offset=".58" stop-color="#ffdc10"/>
+                <stop offset="1" stop-color="#ffd00a"/>
+              </linearGradient>
+            </defs>
+            <path d="M157.689 598.457C154.969 587.188 162.741 582.136 174.011 584.856C179.451 576.307 195.383 575.141 201.99 584.856C212.87 581.747 221.031 587.188 218.311 598.457C230.746 611.281 240.072 633.819 239.683 655.581C239.295 682.005 224.917 689 188 689C151.083 689 136.705 682.005 136.317 655.581C135.928 633.819 145.254 611.281 157.689 598.457Z" fill="url(#bag-gradient)" stroke="#ffc000" stroke-width="5.052" stroke-linejoin="round"/>
+            <path opacity=".34" d="M160.798 601.177C158.078 591.073 165.85 587.964 176.342 590.684C181.782 582.524 193.829 581.358 199.658 590.684C209.761 587.964 217.533 592.239 214.425 601.177C225.305 614.389 233.077 634.596 232.689 654.414C232.3 676.564 218.699 683.559 188 683.948C157.301 683.559 143.7 676.564 143.311 654.414C142.923 634.596 149.917 614.389 160.798 601.177Z" fill="#ffe21a"/>
+          </svg>
+          <span class="face" aria-hidden="true"><i></i><i></i></span>
+          <span class="mood-label">正在<br>纠结</span>
+        </button>
+
+        <button class="mood treat" type="button" aria-pressed="false" data-mood="整点好的" data-mood-key="treat">
+          <span class="face" aria-hidden="true"><i></i><i></i></span>
+          <span class="mood-label">整点<br>好的</span>
+        </button>
+      </div>
+
+      <button class="cta" type="button" aria-label="帮我选择吃什么">
+        <span class="dice" aria-hidden="true">9</span>
+        <span class="cta-label">帮我选</span>
+      </button>
+    </section>
+
+    <section class="result-screen" aria-label="烧烤推荐结果" tabindex="-1" hidden>
+      <img class="result-art" src="images/frame17.png" alt="烧烤推荐卡片：这一顿，给生活一个交代。推荐烧烤，日期 2026 年 7 月 20 日。">
+      <div class="result-tag" aria-hidden="true">烧烤</div>
+      <button class="result-action result-back" type="button" aria-label="返回心情选择"></button>
+      <button class="result-action result-reselect" type="button" aria-label="重新选择"></button>
+      <button class="result-action result-share" type="button" aria-label="分享烧烤推荐"><span>分享</span></button>
+    </section>
+
+    <section class="share-screen" aria-label="分享推荐" tabindex="-1" hidden>
+      <img class="share-art" src="svg/download.svg" alt="分享预览：快乐优先，其他靠边。">
+      <button class="share-action share-close" type="button" aria-label="关闭分享"></button>
+      <button class="share-action share-friend" type="button" aria-label="分享好友"></button>
+      <button class="share-action share-download" type="button" aria-label="保存本地"></button>
+    </section>
+
+    <section class="reselect-screen" aria-label="重新选择推荐" tabindex="-1" hidden>
+      <img class="reselect-art" src="svg/download-1.svg" alt="重选界面：再试试，还是换点别的。当前选择随便吃点，还有六次机会。">
+      <button class="reselect-confirm" type="button" aria-label="确认重新选择"></button>
+    </section>
+
+    <section class="final-screen" aria-label="停止重选提示" tabindex="-1" hidden>
+      <img class="final-art" src="svg/download-2.svg" alt="今日推荐列表与提示：别再挑啦，快去好好吃饭。">
+      <button class="final-confirm" type="button" aria-label="提醒我明天再来"></button>
+    </section>
+  </main>
+
+    <script src="js/app.js" defer></script>
+</body>
+</html>
